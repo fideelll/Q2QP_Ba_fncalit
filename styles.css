@@ -4,11 +4,11 @@
 
 .content {
     position: fixed;
-    bottom: 45%;
+    bottom: 40%;
     background : rgba(3, 0, 0, 0.603);
     color: #f1f1f1;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     font-size: larger;
     z-index: 100;
     text-align: center;
@@ -83,9 +83,10 @@ header label{
 .content .text1{
     position: absolute;
     margin: 5px 0;
-    padding: 10px;
+    padding: 0px;
     width: max-content;
     animation: textmove1 20s linear infinite;
+    
 
 }
 @keyframes textmove1{
@@ -96,7 +97,7 @@ header label{
 .content .text2{
     position: absolute;
     margin: 5px 0;
-    padding: 10px;
+    padding: 0px;
     width: max-content;
     animation: textmove2 20s linear infinite;
 
@@ -110,7 +111,7 @@ header label{
 .content .text3{
     position: absolute;
     margin: 5px 0;
-    padding: 10px;
+    padding: 0px;
     width: max-content;
     animation: textmove3 20s linear infinite;
 
