@@ -1,8 +1,14 @@
 *{
     margin: 0;  padding: 0; text-decoration: none;
+    box-sizing: border-box;
 }
 
+section{margin: 100px;}
 
+img{
+    transition-duration: 500ms;
+
+}
 
 .content {
     position: fixed;
@@ -38,6 +44,8 @@ header{
     justify-content: space-around;
     z-index: 1000;
 }
+
+/*header*/
 
 header .logo {
     font-weight: bolder;
@@ -81,6 +89,7 @@ header label{
     
 }
 
+/*button*/
 .highlight{
     display: inline-block;
     padding: 15px 20px;
@@ -92,6 +101,7 @@ header label{
    color: black;
    border: 2px solid black;
    transition-duration: 500ms;   
+   box-shadow: black 5px 10px;
 }
 
 .highlight:hover{
@@ -99,8 +109,10 @@ header label{
     transition-duration: 500ms;   
     transform: scale(1.5);
     color: white;   
+    box-shadow: white 5px 10px;
 }
 
+/*animation*/
 .content .text1{
     position: absolute;
     margin: 5px 0;
@@ -142,9 +154,186 @@ header label{
     100%{transform:translate(1500px);}
 }
 
+/*section 1 intiative*/
+#WWD-init{
+    margin-top: 120px;
+    padding-left: 50px;
+}
+
+#WWD-init h2{
+    font-size: 50px;
+}
+#WWD-init p{
+    font-size: 20px;
+}
+#WWD-init .wrapper{
+    margin: auto;
+  
+}
+#WWD-init .section-title{
+    font-size: 60px;}
+
+#WWD-init img{
+    float: right;
+    height: 150px; width: auto;
+    padding: 5px;
+}
+
+#WWD-init img:hover{
+    transform: scale(1.1);
+}
+
+/*section 1 involvement*/
+#WWD-invol h2{
+    font-size: 50px;
+    text-align: left;
+}
+#WWD-invol ul li{
+    font-size: 20px;
+    text-align: left;
+}
+#WWD .wwd-invol{
+        padding-left:20px;
+        display: block;
+        
+    }
+    
+#WWD-invol img{
+        float: left;        
+        height: 200px; width: auto;
+        margin: 20px;
+        padding-right: 20px;
+   
+    }
+    
+#WWD-invol   img:hover{
+        transform: scale(1.1);
+    }
+    
+#WWD-invol{                             
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: inline;
+        padding: 20px;}
+
+ #WWD-invol .wrapper{
+        margin: auto;
+        width:90%;
+        float:right;}
 
 
 
+/*section 2*/
+#AaP .section-title{
+    font-size: 60px;
+    padding-left: 30px;
+}
+
+#AaP img{
+    height: 600; width: 1000px;
+}
+
+#AaP p{
+    font-size: 20px;
+    text-align: center;
+}
+
+/*section 3*/
+#au{
+ width: max-content;
+}
+#au .section-title{
+    font-size: 60px;
+    padding-left: 30px;
+}
+
+
+
+#au .gallery {
+
+    margin: 20px;
+
+    width: 300px;
+    display: inline-block;
+  }
+  
+
+  
+#au .gallery img {
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+  }
+  
+#au .desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+#au .gallery img:hover{
+    transform: scale(1.1);
+}
+
+/*section 4*/
+
+#hth{
+    width: max-content;
+   }
+   #hth .section-title{
+       font-size: 60px;
+       padding-left: 30px;
+   }
+   
+   
+   
+   #hth .gallery {
+   
+       margin: 20px;
+   
+       width: 300px;
+       display: inline-block;
+     }
+     
+   
+     
+   #hth .gallery img {
+       width: 100%;
+       height: auto;
+       padding-top: 5px;
+     }
+     
+   #hth .desc {
+       padding: 15px;
+       text-align: center;
+     }
+   
+   #hth .gallery img:hover{
+       transform: scale(1.1);
+   }
+
+
+
+/*sprite*/ 
+   #facebook{
+    background-position: -439px -146px;
+
+
+}
+
+.icon{
+    float: left;
+    display: inline flex;
+    background: url(media/sprite3.png) no-repeat;
+    width: 66px;
+    height:66px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    z-index: 1000;
+}
+
+/*responsive*/
 @media(max-width:500px){
     header{
         padding: 20px;   
@@ -170,5 +359,13 @@ header label{
         display: initial;
         
     }
+    #au .gallery {
+        display: flex;  
+    }
+    img{
+        width: auto; height: 100%   ;
+    }
 }
+
+
 
