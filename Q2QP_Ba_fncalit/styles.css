@@ -1,0 +1,151 @@
+*{
+    margin: 0;  padding: 0; text-decoration: none;
+}
+
+.content {
+    position: fixed;
+    bottom: 45%;
+    background : rgba(3, 0, 0, 0.603);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    font-size: larger;
+    z-index: 100;
+    text-align: center;
+    
+  }
+  
+  
+#video{
+    background-size: cover;
+    height:100%;
+    position: fixed;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+  }
+ 
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background: #f1f1f1;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: black;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    display: block;
+}
+
+
+header .navbar ul li a:hover{
+    background: black;
+    color: white;
+}
+
+#menu-bar{
+    display: none;
+    
+}
+header label{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.button{
+    
+}
+
+.content .text1{
+    position: absolute;
+    margin: 5px 0;
+    padding: 10px;
+    width: max-content;
+    animation: textmove1 20s linear infinite;
+
+}
+@keyframes textmove1{
+    0%  {transform:translate(-200px); }
+    100%{transform:translate(2100px);}
+}
+
+.content .text2{
+    position: absolute;
+    margin: 5px 0;
+    padding: 10px;
+    width: max-content;
+    animation: textmove2 20s linear infinite;
+
+}
+@keyframes textmove2{
+    0%  {transform:translate(-350px); }
+    100%{transform:translate(1800px);}
+}
+
+
+.content .text3{
+    position: absolute;
+    margin: 5px 0;
+    padding: 10px;
+    width: max-content;
+    animation: textmove3 20s linear infinite;
+
+}
+@keyframes textmove3{
+    0%  {transform:translate(-550px); }
+    100%{transform:translate(1500px);}
+}
+
+
+
+
+@media(max-width:500px){
+    header{
+        padding: 20px;   
+    }
+
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: white;
+        border-top: 1px solid black;
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+        
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+
