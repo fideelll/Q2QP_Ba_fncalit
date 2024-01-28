@@ -2,9 +2,11 @@
     margin: 0;  padding: 0; text-decoration: none;
 }
 
+
+
 .content {
     position: fixed;
-    bottom: 40%;
+    bottom: 30%;
     background : rgba(3, 0, 0, 0.603);
     color: #f1f1f1;
     width: 100%;
@@ -57,12 +59,14 @@ header .navbar ul li a{
     padding: 20px;
     color: black;
     display: block;
+    transition-duration: 500ms;  
 }
 
 
 header .navbar ul li a:hover{
     background: black;
     color: white;
+    transition-duration: 500ms;  
 }
 
 #menu-bar{
@@ -74,10 +78,27 @@ header label{
     color: black;
     cursor: pointer;
     display: none;
+    
 }
 
-.button{
-    
+.highlight{
+    display: inline-block;
+    padding: 15px 20px;
+  background-color: white;
+    background-size: cover;
+    text-decoration: none;
+    margin-top: 50px;
+   text-align: center;
+   color: black;
+   border: 2px solid black;
+   transition-duration: 500ms;   
+}
+
+.highlight:hover{
+    background-color: black;  
+    transition-duration: 500ms;   
+    transform: scale(1.5);
+    color: white;   
 }
 
 .content .text1{
@@ -147,6 +168,7 @@ header label{
 
     #menu-bar:checked ~ .navbar{
         display: initial;
+        
     }
 }
 
